@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">blu sky icon</title>
+  <desc id="desc">A blue rounded square with a white lowercase b and chat mark.</desc>
+  <rect width="512" height="512" rx="92" fill="#0d78ff"/>
+  <path d="M128 326V126h82c61 0 101 38 101 99 0 63-43 101-104 101h-24v60l-55-60Zm55-55h25c28 0 47-17 47-46 0-28-19-45-47-45h-25v91Z" fill="#fff"/>
+  <path d="M312 167c44 0 80 35 80 78s-36 78-80 78h-36l-41 43v-96h77c14 0 25-11 25-25s-11-25-25-25h-31v-53h31Z" fill="#8de3ff"/>
+</svg>
