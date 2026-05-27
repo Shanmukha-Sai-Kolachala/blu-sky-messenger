@@ -1,0 +1,17 @@
+{
+  "name": "blu sky Business Messenger",
+  "short_name": "blu sky",
+  "description": "Professional messaging app preview for chat, media sharing, video calls, documents, and business communication.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e9f5ff",
+  "theme_color": "#0d78ff",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
