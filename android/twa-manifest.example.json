@@ -1,0 +1,20 @@
+{
+  "packageId": "com.blusky.messenger",
+  "host": "your-deployed-domain.example",
+  "name": "blu sky",
+  "launcherName": "blu sky",
+  "display": "standalone",
+  "themeColor": "#0d78ff",
+  "navigationColor": "#081324",
+  "backgroundColor": "#e9f5ff",
+  "startUrl": "/",
+  "iconUrl": "https://your-deployed-domain.example/assets/icon.svg",
+  "maskableIconUrl": "https://your-deployed-domain.example/assets/icon.svg",
+  "monochromeIconUrl": "https://your-deployed-domain.example/assets/icon.svg",
+  "orientation": "default",
+  "fingerprints": [],
+  "appVersionName": "0.1.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "blu sky release scaffold"
+}
