@@ -1,0 +1,20 @@
+{
+  "name": "blu-sky-messenger-preview",
+  "version": "0.1.0",
+  "description": "Professional blu sky messaging app preview with chat, media sharing, video-call UI, and business tools.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check script.js && node --check server.js"
+  },
+  "keywords": [
+    "messaging",
+    "pwa",
+    "business-chat",
+    "webrtc",
+    "android",
+    "desktop"
+  ],
+  "author": "blu sky",
+  "license": "UNLICENSED"
+}
