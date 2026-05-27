@@ -1,0 +1,8 @@
+{
+  "appId": "com.blusky.messenger",
+  "appName": "blu sky",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  }
+}
