@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="blu sky is a professional messaging app concept for instant chat, media sharing, video calls, and business communication."
+    />
+    <meta name="theme-color" content="#0d78ff" />
+    <title>blu sky | Business Messenger Preview</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="blu sky navigation">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">b</span>
+          <div>
+            <h1>blu sky</h1>
+            <p>Business messenger</p>
+          </div>
+        </div>
+
+        <nav class="nav-rail" aria-label="Primary">
+          <button class="nav-button active" type="button" data-section="chat" title="Chats" aria-label="Chats">
+            <span aria-hidden="true">#</span>
+          </button>
+          <button class="nav-button" type="button" data-section="calls" title="Calls" aria-label="Calls">
+            <span aria-hidden="true">()</span>
+          </button>
+          <button class="nav-button" type="button" data-section="files" title="Files" aria-label="Files">
+            <span aria-hidden="true">[]</span>
+          </button>
+          <button class="nav-button" type="button" data-section="insights" title="Insights" aria-label="Insights">
+            <span aria-hidden="true">%</span>
+          </button>
+        </nav>
+
+        <div class="account-card">
+          <span class="avatar">BS</span>
+          <div>
+            <strong>Blu Sky HQ</strong>
+            <small>Verified workspace</small>
+          </div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <section class="inbox-panel" aria-label="Conversations">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">Version 0.1.0 Preview</p>
+              <h2>Command Center</h2>
+            </div>
+            <button id="installButton" class="ghost-button" type="button" hidden>Install</button>
+          </header>
+
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" placeholder="Search customers, teams, documents" />
+          </label>
+
+          <div class="status-grid" aria-label="Business status">
+            <article>
+              <strong id="onlineCount">24,981</strong>
+              <span>online now</span>
+            </article>
+            <article>
+              <strong>99.98%</strong>
+              <span>uptime target</span>
+            </article>
+          </div>
+
+          <div id="conversationList" class="conversation-list"></div>
+        </section>
+
+        <section class="chat-panel" aria-label="Active chat">
+          <header class="chat-header">
+            <div class="contact-summary">
+              <span id="activeAvatar" class="avatar large">AV</span>
+              <div>
+                <p id="activeStatus" class="eyebrow">Online</p>
+                <h2 id="activeName">Ava Patel</h2>
+              </div>
+            </div>
+            <div class="header-actions">
+              <button id="voiceButton" class="icon-button" type="button" title="Voice call" aria-label="Voice call">☎</button>
+              <button id="videoButton" class="icon-button primary" type="button" title="Video call" aria-label="Video call">▶</button>
+              <button id="infoButton" class="icon-button" type="button" title="Conversation details" aria-label="Conversation details">i</button>
+            </div>
+          </header>
+
+          <div class="feature-strip" aria-label="Main features">
+            <span>Immediate chat</span>
+            <span>Photos and videos</span>
+            <span>Video calling</span>
+            <span>Documents</span>
+            <span>Business CRM</span>
+          </div>
+
+          <div id="messages" class="messages" aria-live="polite"></div>
+
+          <form id="composer" class="composer">
+            <input id="fileInput" type="file" multiple accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt" hidden />
+            <button id="attachButton" class="icon-button" type="button" title="Share photos, videos, or documents" aria-label="Attach files">+</button>
+            <label class="message-input-wrap">
+              <input id="messageInput" type="text" autocomplete="off" placeholder="Message blu sky..." aria-label="Message" />
+            </label>
+            <button class="send-button" type="submit">Send</button>
+          </form>
+        </section>
+
+        <aside class="business-panel" aria-label="Business tools">
+          <section class="tool-section">
+            <div class="section-title">
+              <p class="eyebrow">Growth Suite</p>
+              <h2>Business tools</h2>
+            </div>
+            <div class="tool-list">
+              <button type="button" class="tool-item active" data-tool="smartReply">
+                <span>Smart replies</span>
+                <strong>7 ready</strong>
+              </button>
+              <button type="button" class="tool-item" data-tool="broadcast">
+                <span>Campaign broadcast</span>
+                <strong>1.2M reach</strong>
+              </button>
+              <button type="button" class="tool-item" data-tool="vault">
+                <span>Secure file vault</span>
+                <strong>Encrypted</strong>
+              </button>
+              <button type="button" class="tool-item" data-tool="handoff">
+                <span>Agent handoff</span>
+                <strong>4 queues</strong>
+              </button>
+            </div>
+          </section>
+
+          <section class="tool-section">
+            <div class="section-title">
+              <p class="eyebrow">Selected Feature</p>
+              <h2 id="toolTitle">Smart replies</h2>
+            </div>
+            <p id="toolDescription" class="tool-copy">
+              Suggested replies help support, sales, and operations teams answer faster without losing a human tone.
+            </p>
+            <div id="quickReplies" class="quick-replies"></div>
+          </section>
+
+          <section class="tool-section release-card">
+            <div class="section-title">
+              <p class="eyebrow">Release Readiness</p>
+              <h2>Ship checklist</h2>
+            </div>
+            <ul class="check-list">
+              <li>Web preview ready</li>
+              <li>PWA manifest included</li>
+              <li>Android/Desktop guide included</li>
+              <li>Cloud backend required for real scale</li>
+            </ul>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <div id="callModal" class="call-modal" hidden>
+      <section class="call-card" role="dialog" aria-modal="true" aria-labelledby="callTitle">
+        <header>
+          <div>
+            <p class="eyebrow">Encrypted video room</p>
+            <h2 id="callTitle">Calling Ava Patel</h2>
+          </div>
+          <button id="closeCallButton" class="icon-button" type="button" title="Close call" aria-label="Close call">x</button>
+        </header>
+        <div class="video-grid">
+          <div class="remote-video">
+            <span id="remoteInitials">AV</span>
+            <p>Waiting for participant...</p>
+          </div>
+          <video id="localVideo" autoplay muted playsinline></video>
+        </div>
+        <footer class="call-controls">
+          <button id="muteButton" type="button">Mute</button>
+          <button id="cameraButton" type="button">Camera</button>
+          <button id="endCallButton" class="danger" type="button">End call</button>
+        </footer>
+      </section>
+    </div>
+
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
